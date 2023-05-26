@@ -25,6 +25,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "037e75c3-f68c-4356-bbbb-768c8b8e5c77"
+      }
+    },
+    "owner": "keenangee"
   }
 }
