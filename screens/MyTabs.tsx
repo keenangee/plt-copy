@@ -12,14 +12,23 @@ const Tab = createBottomTabNavigator();
 
 const MyTabs: React.FC = () => {
   return (
-    <Tab.Navigator>
+    <Tab.Navigator
+      screenOptions={{
+        tabBarActiveTintColor: "#f4b9d4",
+        tabBarInactiveTintColor: "gray",
+      }}
+    >
       <Tab.Screen
         name="Home"
         component={HomeScreen}
         options={{
           title: "PRETTYLITTLETHING",
-          tabBarIcon: () => <Icon name="home" color="#f4b9d4" size={25} />,
-          tabBarLabel: () => <Text style={styles.navText}>Home</Text>,
+          tabBarIcon: ({ color }) => (
+            <Icon name="home" color={color} size={25} />
+          ),
+          tabBarLabel: ({ color }) => (
+            <Text style={(styles.navText, { color })}>Home</Text>
+          ),
         }}
       />
       <Tab.Screen
@@ -27,8 +36,12 @@ const MyTabs: React.FC = () => {
         component={ShopScreen}
         options={{
           title: "PRETTYLITTLETHING",
-          tabBarIcon: () => <Icon name="search" color="#f4b9d4" size={25} />,
-          tabBarLabel: () => <Text style={styles.navText}>Shop</Text>,
+          tabBarIcon: ({ color }) => (
+            <Icon name="search" color={color} size={25} />
+          ),
+          tabBarLabel: ({ color }) => (
+            <Text style={(styles.navText, { color })}>Shop</Text>
+          ),
         }}
       />
       <Tab.Screen
@@ -36,8 +49,12 @@ const MyTabs: React.FC = () => {
         component={BagScreen}
         options={{
           title: "PRETTYLITTLETHING",
-          tabBarIcon: () => <Icon1 name="handbag" color="#f4b9d4" size={25} />,
-          tabBarLabel: () => <Text style={styles.navText}>Bag</Text>,
+          tabBarIcon: ({ color }) => (
+            <Icon1 name="handbag" color={color} size={25} />
+          ),
+          tabBarLabel: ({ color }) => (
+            <Text style={(styles.navText, { color })}>Bag</Text>
+          ),
         }}
       />
       <Tab.Screen
@@ -45,8 +62,12 @@ const MyTabs: React.FC = () => {
         component={WishlistScreen}
         options={{
           title: "PRETTYLITTLETHING",
-          tabBarIcon: () => <Icon name="heart" color="#f4b9d4" size={25} />,
-          tabBarLabel: () => <Text style={styles.navText}>Wishlist</Text>,
+          tabBarIcon: ({ color }) => (
+            <Icon name="heart" color={color} size={25} />
+          ),
+          tabBarLabel: ({ color }) => (
+            <Text style={(styles.navText, { color })}>Wishlist</Text>
+          ),
         }}
       />
       <Tab.Screen
@@ -54,8 +75,12 @@ const MyTabs: React.FC = () => {
         component={ShopScreen}
         options={{
           title: "PRETTYLITTLETHING",
-          tabBarIcon: () => <Icon name="person" color="#f4b9d4" size={25} />,
-          tabBarLabel: () => <Text style={styles.navText}>My PLT</Text>,
+          tabBarIcon: ({ color }) => (
+            <Icon name="person" color={color} size={25} />
+          ),
+          tabBarLabel: ({ color }) => (
+            <Text style={(styles.navText, { color })}>My PLT</Text>
+          ),
         }}
       />
     </Tab.Navigator>
@@ -66,7 +91,7 @@ export default MyTabs;
 
 const styles = StyleSheet.create({
   navText: {
-    color: "#f4b9d4",
+    color: "",
     fontSize: 12,
     fontWeight: "bold",
   },
