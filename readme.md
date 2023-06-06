@@ -8,7 +8,7 @@ Second I wanted to utilise the 'FlatList' component to display multiple automate
 
 ## Screenshots
 
-![Home Screen](/assets/screenshots/homeScreen1.png)
+![Home Screen](/assets/screenshots/homeScreen1.png =250x)
 ![Home Screen](/assets/screenshots/homeScreen2.png)
 
 To run this project, follow these steps:
