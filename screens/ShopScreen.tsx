@@ -1,11 +1,14 @@
-import { StyleSheet, Text, View } from "react-native";
+import { ScrollView, StyleSheet, Text, View } from "react-native";
 import React from "react";
+import TopItems from "../components/TopItems";
+import SearchBar from "../components/SearchBar";
 
 const ShopScreen = () => {
   return (
-    <View>
-      <Text>ShopScreen</Text>
-    </View>
+    <ScrollView>
+      <SearchBar />
+      <TopItems />
+    </ScrollView>
   );
 };
 

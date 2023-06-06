@@ -21,3 +21,12 @@ export interface PaginationProps {
     img: ImageSourcePropType;
   }[];
 }
+
+export interface TopItemAsItemProps {
+  data: {
+    id: number;
+    title: string;
+    img: ImageSourcePropType;
+    price: number;
+  }[];
+}

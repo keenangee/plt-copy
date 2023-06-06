@@ -7,6 +7,7 @@ import Icon1 from "react-native-vector-icons/SimpleLineIcons";
 import ShopScreen from "./ShopScreen";
 import BagScreen from "./BagScreen";
 import WishlistScreen from "./WishlistScreen";
+import MyPltScreen from "./MyPltScreen";
 
 const Tab = createBottomTabNavigator();
 
@@ -22,7 +23,7 @@ const MyTabs: React.FC = () => {
         name="Home"
         component={HomeScreen}
         options={{
-          title: "PRETTYLITTLETHING",
+          title: "YOURSHOP",
           tabBarIcon: ({ color }) => (
             <Icon name="home" color={color} size={25} />
           ),
@@ -35,7 +36,7 @@ const MyTabs: React.FC = () => {
         name="Shop"
         component={ShopScreen}
         options={{
-          title: "PRETTYLITTLETHING",
+          title: "YOURSHOP",
           tabBarIcon: ({ color }) => (
             <Icon name="search" color={color} size={25} />
           ),
@@ -48,7 +49,7 @@ const MyTabs: React.FC = () => {
         name="Bag"
         component={BagScreen}
         options={{
-          title: "PRETTYLITTLETHING",
+          title: "YOURSHOP",
           tabBarIcon: ({ color }) => (
             <Icon1 name="handbag" color={color} size={25} />
           ),
@@ -61,7 +62,7 @@ const MyTabs: React.FC = () => {
         name="Wishlist"
         component={WishlistScreen}
         options={{
-          title: "PRETTYLITTLETHING",
+          title: "YOURSHOP",
           tabBarIcon: ({ color }) => (
             <Icon name="heart" color={color} size={25} />
           ),
@@ -72,9 +73,9 @@ const MyTabs: React.FC = () => {
       />
       <Tab.Screen
         name="My PLT"
-        component={ShopScreen}
+        component={MyPltScreen}
         options={{
-          title: "PRETTYLITTLETHING",
+          title: "YOURSHOP",
           tabBarIcon: ({ color }) => (
             <Icon name="person" color={color} size={25} />
           ),
