@@ -2,7 +2,7 @@ import { StyleSheet, Text, View } from "react-native";
 import React from "react";
 import Icon from "react-native-vector-icons/Octicons";
 
-const MyPltScreen = () => {
+const MyLabelScreen = () => {
   return (
     <View style={styles.container}>
       <View>
@@ -13,7 +13,7 @@ const MyPltScreen = () => {
   );
 };
 
-export default MyPltScreen;
+export default MyLabelScreen;
 
 const styles = StyleSheet.create({
   container: {

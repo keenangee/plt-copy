@@ -7,7 +7,7 @@ import Icon1 from "react-native-vector-icons/SimpleLineIcons";
 import ShopScreen from "./ShopScreen";
 import BagScreen from "./BagScreen";
 import WishlistScreen from "./WishlistScreen";
-import MyPltScreen from "./MyPltScreen";
+import MyLabelScreen from "./MyLabelScreen";
 
 const Tab = createBottomTabNavigator();
 
@@ -72,8 +72,8 @@ const MyTabs: React.FC = () => {
         }}
       />
       <Tab.Screen
-        name="My PLT"
-        component={MyPltScreen}
+        name="My Label"
+        component={MyLabelScreen}
         options={{
           title: "YOURSHOP",
           tabBarIcon: ({ color }) => (
