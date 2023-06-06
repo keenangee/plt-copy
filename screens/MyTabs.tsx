@@ -80,7 +80,7 @@ const MyTabs: React.FC = () => {
             <Icon name="person" color={color} size={25} />
           ),
           tabBarLabel: ({ color }) => (
-            <Text style={(styles.navText, { color })}>My PLT</Text>
+            <Text style={(styles.navText, { color })}>Profile</Text>
           ),
         }}
       />

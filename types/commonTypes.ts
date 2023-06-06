@@ -30,3 +30,12 @@ export interface TopItemAsItemProps {
     price: number;
   }[];
 }
+
+export interface WishListProps {
+  item: {
+    id: number;
+    title: string;
+    img: ImageSourcePropType;
+    price: number;
+  }[];
+}
